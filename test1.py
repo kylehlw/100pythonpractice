@@ -138,3 +138,34 @@
 # a = [9, 3, 5]
 # b = a[:]
 # print b
+
+
+# 题目：输出 9*9 乘法口诀表。
+#
+# 程序分析：分行与列考虑，共9行9列，i控制行，j控制列。
+#
+# for i in range(1,10):
+#     print
+#     for j in range(1,i + 1):
+#         print "%d*%d=%d" % (j,i,i*j),   #这里的， 使得打印不换行
+
+
+# 题目：暂停一秒输出。
+# 程序分析：使用 time 模块的 sleep() 函数。
+
+# import time
+#
+# for i in range(1,9,2):
+#     print i,
+#     time.sleep(1)
+
+# 题目：暂停一秒输出，并格式化当前时间。
+
+import time
+
+print time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+
+# 暂停一秒
+time.sleep(1)
+print time.localtime(time.time())
+print time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))

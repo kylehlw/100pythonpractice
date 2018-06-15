@@ -198,7 +198,7 @@
 
 # 题目：一球从100米高度自由落下，每次落地后反跳回原高度的一半；再落下，求它在第10次落地时，共经过多少米？第10次反弹多高？
 
-high = 100
+high = 100.0
 time = 10
 tour =[]
 
@@ -213,4 +213,4 @@ for i in range(1, time +1):
     long.append(high)
 
 print('total high tour = {0}'.format(sum(tour)))
-print('10 times total high: long ={0}'.format(height[-1]))
+print('10 times total high: long ={0}'.format(long[-1]))
